@@ -1,10 +1,10 @@
 <div align="center">
 
-# MinuteMind
+# Vox-EchoMind
 
 **Point it at a video. Get the meeting back.**
 
-MinuteMind turns any YouTube video (or local recording) into a searchable, question-answerable knowledge base — automatically transcribed, summarized, and broken into action items, decisions, and open questions, with a RAG-powered chat interface to ask it anything the recording said.
+Vox-EchoMind turns any YouTube video (or local recording) into a searchable, question-answerable knowledge base — automatically transcribed, summarized, and broken into action items, decisions, and open questions, with a RAG-powered chat interface to ask it anything the recording said.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-LCEL-1C3C3C?logo=langchain&logoColor=white)](https://www.langchain.com/)
@@ -17,7 +17,7 @@ MinuteMind turns any YouTube video (or local recording) into a searchable, quest
 
 ## What it does
 
-Give MinuteMind a YouTube link. It will:
+Give Vox-EchoMind a YouTube link. It will:
 
 1. **Download & chunk** the audio (`yt-dlp` + `pydub`)
 2. **Transcribe** it — locally via Whisper (English) or via the Sarvam AI speech API (Hinglish)
@@ -71,7 +71,7 @@ It's usable two ways: as a **CLI** (`main.py`) or through a **full web app** (Fa
 ## Project structure
 
 ```
-MinuteMind/
+Vox-EchoMind/
 ├── core/
 │   ├── transcriber.py      # Whisper / Sarvam AI transcription
 │   ├── summarize.py        # title + summary generation
@@ -106,8 +106,8 @@ MinuteMind/
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/arya-manohar-16/MinuteMind.git
-cd MinuteMind
+git clone https://github.com/arya-manohar-16/Vox-EchoMind.git
+cd Vox-EchoMind
 pip install -r requirements.txt
 pip install -r backend/requirements-backend.txt   # only needed for the web app
 ```
